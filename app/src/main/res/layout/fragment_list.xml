@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".fragments.list.ListFragment">
 
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewUsers"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="24dp"
+        tools:listitem="@layout/custom_row"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
